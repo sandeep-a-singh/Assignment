@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="15dp"
+        android:gravity="center"
+    android:background="#fffffe"
+    android:elevation="10dp"
+        android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/weather_image"
+        android:background="@drawable/na"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:layout_below="@+id/weather_image"
+        android:textColor="@color/accent_material_dark"
+
+        android:id="@+id/tv_date"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="italic" />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+           android:id="@+id/minimum_temp"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_below="@+id/minimum_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maximum_temp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_below="@+id/maximum_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/climate"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textColor="@color/colorText"
+
+            />
+
+    </RelativeLayout>
